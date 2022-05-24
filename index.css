@@ -1,0 +1,53 @@
+.typewriter {
+  overflow: hidden;
+  border-right: .1em solid #858df0; 
+  white-space: nowrap; 
+  margin: 0 auto;
+  animation:
+    typing 2.5s steps(35, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 80% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #858df0; }
+}
+
+.u-custom-list {
+text-align: left;
+}
+.u-custom-list > li > span {
+margin-left: 2rem;
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale3d(var(--animation-zoom_in-scale), var(--animation-zoom_in-scale), var(--animation-zoom_in-scale));
+  }
+  50% {
+    opacity: 1;
+  }
+}
+.zoomIn {
+  animation-name: zoomIn;
+}
+
+.custom-zoomin{
+  position: relative;
+  transform: scale(0.3);
+  opacity: 0;
+  transition: 1s all ease;
+}
+
+.custom-zoomin.active{
+  transform: scale(1);
+  opacity: 1;
+}
